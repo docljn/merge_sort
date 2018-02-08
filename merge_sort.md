@@ -39,12 +39,12 @@ Recursive, so:
 
 ```JAVA
 MergeSort(array A, int p, int r) {
-if (p < r) { // we have at least 2 items
-q = (p + r)/2
-MergeSort(A, p, q) // sort A[p..q]
-MergeSort(A, q+1, r) // sort A[q+1..r]
-Merge(A, p, q, r) // merge everything together
-}
+  if (p < r) { // we have at least 2 items
+    q = (p + r)/2
+    MergeSort(A, p, q) // sort A[p..q]
+    MergeSort(A, q+1, r) // sort A[q+1..r]
+    Merge(A, p, q, r) // merge everything together
+  }
 }
 ```
 
